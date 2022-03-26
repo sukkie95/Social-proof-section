@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;1,100&family=Oswald:wght@300&family=Roboto:wght@100&display=swap');
+*{
+    margin: 0;
+}
+body{
+    font-family: 'spartan';
+    font-size: 15px;
+}
+
+.header-content{
+    padding: 20px;
+    display: flex;
+    background-color: white;
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+.first{
+    width: 40%;
+}
+
+.welcome h1{
+    font-size: 50px;
+    line-height: 1;
+    padding: 0;
+    margin-block-start: 0px;
+    color: purple;
+    margin-bottom: 30px;
+
+}
+
+.fa{
+    color: rgb(185, 135, 41)
+}
+
+.second{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+
+}
+
+.second div{
+    width: 80%;
+    position: relative;
+    padding: 10px;
+    background-color: hsl(300, 24%, 96%);
+    margin-bottom: 20px;
+    border-radius: 10px;
+    color: purple;
+
+}
+.first-rev{
+     left: 30px;
+   
+}
+
+.second div span:last-child{
+    margin-left: 50px;
+}
+
+.second-rev{
+    left: 60px
+}
+
+.third-rev{
+    left: 90px
+}
+
+.client-reviews{
+    background-color: white;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.client-reviews .client1, .client2, .client3{
+    position: relative;
+    border-radius: 10px;
+    background-color: rgb(150, 101, 150);
+    color: white;
+    padding: 20px;
+    width: 28%;
+    
+
+}
+
+.client2{
+    top: 30px;
+}
+
+.client3{
+    top: 60px
+}
+
+.client-reviews img{
+    width: 80px;
+   
+    border-radius: 50%;
+}
+
+
+
+.user1{
+    display: flex;
+    width: 100%;
+}
+
+.user-img{
+    width: 30%;
+}
+
+h4{
+    margin-block-start: 0px;
+}
+
+.container{
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+@media(max-width: 500px){
+    .header-content{
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        padding: 0px;
+    }
+
+    .first{
+        width: 100%;
+    }
+
+    .second{
+        width: 100%;
+    }
+
+    .second div:not(.welcome){
+        width: 100%;
+        left: 0;
+        padding: 20px;
+    }
+    .client-reviews{
+        width: 100%;
+        flex-direction: column;
+        margin-top: 30px;
+        flex-wrap: nowrap
+
+    }
+
+    .client-reviews .client1, .client2, .client3{
+        width: 100%;
+        top: 0px;
+        justify-content: center;
+        margin-top: 30px;
+       
+    }
+
+    .welcome{
+        margin-bottom: 30px;
+    }
+
+    *{
+        box-sizing: border-box;
+    }
+
+
+
+  
+
+}
+
+footer{
+    text-align: center;
+    color: purple;
+    background-color: rgb(246, 243, 236)
+}
+
+@media(max-width: 1265px){
+    .user-img{
+        width: 50%;
+    }
+}
+
+@media(max-width: 1070px){
+    .client-reviews{
+      flex-wrap: wrap;
+    }
+}
